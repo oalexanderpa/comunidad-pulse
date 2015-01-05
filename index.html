@@ -5,13 +5,17 @@
 	<title>Pulse: Comunidad de tecnología</title>
 	<meta description="comunidad de amantes a la tecnología, geeks y gamers">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
+
+	<script src="prefixfree.min.js"></script>
 </head>
 <body>
 	<header>
 		<figure id="logo">
 			<img src="logo.png" alt="logo">
 		</figure>
-		<h1>Puls2014: Comunidad de Tecnología</h1>
+		<h1>Puls2014: Comunidad de amantes a la tecnología, geeks y gamers</h1>
 		<figure id="avatar">
 			<img src="avatar.jpg">
 		</figure>
@@ -19,22 +23,57 @@
 	<nav>
 		<ul>
 			<li><a href="">Python</a></li>
-			<li><a href="">HTML5n</a></li>
+			<li><a href="">HTML5</a></li>
 			<li><a href="">Javascript</a></li>
 			<li><a href="">CSS3</a></li>
 			<li><a href="">Django</a></li>
 			<li id="publicar_nav">
-				<a href="">Publicar</a>
+				<a href="#" class="icon-pen" id="mostrar-form">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Titulo" required>
+		<input type="text" id="autor" placeholder="Autor" required>
+		<input type="url" id="url" placeholder="Link" required>
+		<input type="submit" value="Agregar">
+	</form>
+	<aside>
+		<video width="320" height="240" controls>
+			<source src="zelda_wiiu.mp4"></source>
+		</video>
+	</aside>
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
 				<img src="imagen.jpg" alt="">
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Título del artículo</a>
+				<a href="#">Aspen, un framework para Python</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="" class="tag_item">pony</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="" class="up icon-arrow-up"></a>
+				696
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" alt="">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Top 5 de herramientas para realizar SEO</a>
 			</h2>
 			<div class="autor_item">
 				<a href="#">por Joana Muñoz</a>
@@ -46,11 +85,107 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="" class="up"></a>
+				<a href="" class="up icon-arrow-up"></a>
 				696
-				<a href="" class="down"></a>
-				<a href="" class="comentarios_item">69</a>
-				<a href="" class="guardar_item"></a>
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" alt="">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Mascara de recorte en humo con After Effects</a>
+			</h2>
+			<div class="autor_item">
+				<a href="#">por Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="" class="tag_item">pony</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="" class="up icon-arrow-up"></a>
+				696
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" alt="">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Vagrant, crea entornos de desarrollo virtualizados</a>
+			</h2>
+			<div class="autor_item">
+				<a href="#">por Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="" class="tag_item">pony</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="" class="up icon-arrow-up"></a>
+				696
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" alt="">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Automatizar tareas con Nginx y Fabric</a>
+			</h2>
+			<div class="autor_item">
+				<a href="#">por Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="" class="tag_item">pony</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="" class="up icon-arrow-up"></a>
+				696
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" alt="">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Dominio virtual para Laravel en Ubuntu</a>
+			</h2>
+			<div class="autor_item">
+				<a href="#">por Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="" class="tag_item">pony</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="" class="up icon-arrow-up"></a>
+				696
+				<a href="" class="down icon-arrow-down"></a>
+				<a href="" class="comentarios_item">3</a>
+				<a href="" class="guardar_item icon-star"></a>
 			</div>
 		</article>
 	</section>
@@ -60,5 +195,7 @@
 		</p>
 		<p>mejorandola.la 2014</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="main.js"></script>	
 </body>
 </html>
